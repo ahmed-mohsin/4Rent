@@ -7,14 +7,13 @@ class Home extends StatefulWidget {
   @override
   HomeState createState() => HomeState();
 }
-
 class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      color: Colors.blue,
+      color: Colors.white,
     );
   }
 }

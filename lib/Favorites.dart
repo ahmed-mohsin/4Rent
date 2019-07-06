@@ -14,7 +14,7 @@ class FavoritesState extends State<Favorites> {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      color: Colors.teal,
+      color: Colors.white,
     );
   }
 }

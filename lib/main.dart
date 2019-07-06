@@ -65,9 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(child: ListView(children: <Widget>[Text("hello")],),),
       floatingActionButton: FloatingActionButton(child: Icon(Icons.add_box,color: Colors.white,size: 25,),onPressed: (){}),
       appBar: AppBar(
-        title: Text("For rent"),
+        title: Text("4Rent"),
       ),
       body: PageStorage(
         child: currentPage,
@@ -83,20 +84,24 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home,color: Colors.blue,),
-            title: Text('Home'),
+            backgroundColor: Colors.blue,
+            icon: Icon(Icons.home,color: Colors.white,),
+            title: Text('Home',style: TextStyle(color: Colors.white),),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.category,color: Colors.blue,),
-            title: Text("Catogries"),
+            backgroundColor: Colors.blue,
+            icon: Icon(Icons.category,color: Colors.white,),
+            title: Text('Catogries',style: TextStyle(color: Colors.white),),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite,color: Colors.blue,),
-            title: Text("Favorites"),
+            backgroundColor: Colors.blue,
+            icon: Icon(Icons.favorite,color: Colors.white,),
+            title: Text('Favorites',style: TextStyle(color: Colors.white),),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.message,color: Colors.blue,),
-            title: Text("Talk"),
+            backgroundColor: Colors.blue,
+            icon: Icon(Icons.chat_bubble,color: Colors.white,),
+            title: Text('Chats',style: TextStyle(color: Colors.white),),
           ),
         ],
       ),
